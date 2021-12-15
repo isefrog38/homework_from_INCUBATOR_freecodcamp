@@ -122,8 +122,7 @@ firstLetterOfLastName = lastName[0];
 let myStr = "Jello World";
 myStr = "Hello World";
 
-
-
+s
 
 
 
