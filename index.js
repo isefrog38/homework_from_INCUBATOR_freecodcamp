@@ -165,10 +165,86 @@ const removedFromMyArray = myArray.pop();
 const myArray = [["John", 23], ["dog", 3]];
 const removedFromMyArray = myArray.shift();
 
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35])
+
+const myList = [
+  ["Milk", 2.5],
+  ["Pasta", 10],
+  ["Coca-Cola", 4],
+  ["Tomato", 6],
+  ["Juse", 5]
+  ];
+
+  function reusableFunction() {
+    console.log("Hi World")
+  }
+  
+  reusableFunction()
+
+  function functionWithArgs(a,b) {
+    console.log(a+b)
+  }
+  functionWithArgs(1,2) 
+  functionWithArgs(7,9)
+  
+  function timesFive(numb) {
+    return numb * 5
+  }
+  
+  timesFive(5)
+
+  let myGlobal = 10;
+
+function fun1() {
+oopsGlobal = 5
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+  
+function myLocalScope() {
+let myVar = 5;
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);
+
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+const outerWear = "sweater";
+  return outerWear;
+}
+
+myOutfit();
+
+let sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+function addFive() {
+ sum = sum + 5;
+}
+addThree();
+addFive();
 
 
+let processed = 0;
 
+function processArg(num) {
+  return (num + 3) / 5;
+}
 
-
+processed = processArg(7)
 
 
